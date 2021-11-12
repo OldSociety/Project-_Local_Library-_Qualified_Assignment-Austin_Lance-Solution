@@ -7,10 +7,7 @@ const getTotalAccountsCount = (accounts) => {
 }
 
 const getBooksBorrowedCount = (books) => {
-  return books.filter((book) => {
-    const [recent] = book.borrows
-    return !recent.returned
-  }).length
+  return books.filter(book => !book.borrows[0].returned).length
 }
 
 const sortBooks = (array) => {
