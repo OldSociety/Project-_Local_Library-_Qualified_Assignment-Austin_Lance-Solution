@@ -1,12 +1,10 @@
 const findAuthorById = (authors, id) => {
   let found = authors.find((author) => author.id === id)
-  console.log(found)
   return found
 }
 
 const findBookById = (books, id) => {
   let found = books.find((book) => book.id === id)
-  console.log(found)
   return found
 }
 
